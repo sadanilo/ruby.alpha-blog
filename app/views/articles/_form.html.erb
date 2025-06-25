@@ -1,0 +1,23 @@
+<%= form_with(model: @article, local: true, data: { turbo: false }) do |f| %>
+
+  <p>
+
+    <%= f.label :title %> <br />
+    <%= f.text_field :title %><br />
+
+  </p>
+
+  <p>
+
+    <%= f.label :description %> <br />
+    <%= f.textarea :description %>
+
+  </p>
+
+  <p>
+
+    <%= f.submit %>
+
+  </p>
+
+<% end %> 
